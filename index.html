@@ -80,34 +80,73 @@
       <div class="sec-head">
         <span class="sec-num">01</span>
         <h2 data-split>Selected work</h2>
-        <p class="sec-sub reveal">Four things I've built and shipped, from a thesis model to a store taking real payments.</p>
+        <p class="sec-sub reveal">Five things I've built and shipped, from a thesis model to a store taking real payments.</p>
       </div>
 
       <div class="index-grid">
-        <a class="pcard" href="#p-drought" style="--d:0">
+        <a class="pcard feature" href="#p-kundar" style="--d:0">
+          <span class="pcard-img"><img src="img/kundar-home.webp" alt="" loading="lazy"></span>
+          <span class="pcard-row"><span class="pcard-name">Kundar Travel</span><span class="pcard-year">Live demo</span></span>
+          <span class="pcard-tag">Stays booking · site, host dashboard and API</span>
+        </a>
+        <a class="pcard" href="#p-drought" style="--d:1">
           <span class="pcard-img"><img src="img/drought-dashboard.webp" alt="" loading="lazy"></span>
           <span class="pcard-row"><span class="pcard-name">Drought Forecast</span><span class="pcard-year">2026</span></span>
           <span class="pcard-tag">Deep learning thesis · PyTorch, React</span>
         </a>
-        <a class="pcard" href="#p-chopdash" style="--d:1">
+        <a class="pcard" href="#p-chopdash" style="--d:2">
           <span class="pcard-img"><img src="img/chopdash-home.webp" alt="" loading="lazy"></span>
           <span class="pcard-row"><span class="pcard-name">ChopDash</span><span class="pcard-year">Live demo</span></span>
           <span class="pcard-tag">Food delivery · three apps in one</span>
         </a>
-        <a class="pcard" href="#p-turnup" style="--d:2">
+        <a class="pcard" href="#p-turnup" style="--d:3">
           <span class="pcard-img"><img src="img/turnup-home.webp" alt="" loading="lazy"></span>
           <span class="pcard-row"><span class="pcard-name">Turnup</span><span class="pcard-year">Live demo</span></span>
           <span class="pcard-tag">Events &amp; QR ticketing</span>
         </a>
-        <a class="pcard" href="#p-store" style="--d:3">
+        <a class="pcard" href="#p-store" style="--d:4">
           <span class="pcard-img"><img src="img/store-home.webp" alt="" loading="lazy"></span>
           <span class="pcard-row"><span class="pcard-name">Arede Store</span><span class="pcard-year">Production</span></span>
           <span class="pcard-tag">E-commerce for a homeware retailer</span>
         </a>
       </div>
 
-      <!-- 01 Drought -->
-      <article class="project" id="p-drought">
+      <!-- 01 Kundar Travel -->
+      <article class="project" id="p-kundar">
+        <div class="gallery reveal">
+          <figure class="stage"><img class="stage-img" src="img/kundar-home.webp" alt="Kundar Travel home page" width="1600" height="1000" loading="lazy"><figcaption class="stage-cap">Cinematic hero with misty slide wipes and a destination search</figcaption></figure>
+          <div class="thumbs" role="tablist" aria-label="Kundar Travel screenshots">
+            <button class="thumb on" type="button" data-src="img/kundar-home.webp" data-cap="Cinematic hero with misty slide wipes and a destination search"><img src="img/kundar-home.webp" alt="" loading="lazy"><span>Home</span></button>
+            <button class="thumb" type="button" data-src="img/kundar-stays.webp" data-cap="Stays across Lagos, Abuja, Ibadan and Port Harcourt"><img src="img/kundar-stays.webp" alt="" loading="lazy"><span>Stays</span></button>
+            <button class="thumb" type="button" data-src="img/kundar-hold.webp" data-cap="Book Now places a real 15-minute hold with a live countdown"><img src="img/kundar-hold.webp" alt="" loading="lazy"><span>Hold</span></button>
+            <button class="thumb" type="button" data-src="img/kundar-host.webp" data-cap="Host dashboard with live holds and blocked nights"><img src="img/kundar-host.webp" alt="" loading="lazy"><span>Host</span></button>
+            <button class="thumb" type="button" data-src="img/kundar-calendar.webp" data-cap="Two-month calendar where hosts block and unblock nights"><img src="img/kundar-calendar.webp" alt="" loading="lazy"><span>Calendar</span></button>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status live reveal">Completed · Live demo</span>
+          <h3 class="reveal">Kundar Travel Stays Booking Platform</h3>
+          <p class="desc reveal">A stays-booking site for places in Lagos, Abuja, Ibadan and Port Harcourt. Guests search by city, dates and group size, then hold a stay while they pay. Hosts run their places from a separate dashboard: listings, photos, calendars and every guest hold.</p>
+          <ul class="did reveal">
+            <li>Double bookings ruled out by the database itself: one row per night under a unique key, so a lost race ends in a clean 409</li>
+            <li>Book Now places a 15-minute hold with a live countdown; expired holds free their nights automatically</li>
+            <li>Search returns only stays that are free for every night of the trip</li>
+            <li>React host dashboard to add places, upload photos, publish or pause, and block dates on a two-month calendar</li>
+            <li>Cinematic front end in plain JavaScript, with clouds drawn on a canvas and a card-to-detail page flight</li>
+          </ul>
+          <div class="facts reveal">
+            <div class="fact"><b data-count>1</b><span>booking wins out of 20 sent at once</span></div>
+            <div class="fact"><b data-count>15</b><span>minute holds with a live countdown</span></div>
+            <div class="fact"><b data-count>4</b><span>Nigerian cities, 8 real stays</span></div>
+          </div>
+          <div class="tags reveal"><span class="tag">JavaScript</span><span class="tag">React (Vite)</span><span class="tag">Express</span><span class="tag">MySQL</span><span class="tag">Canvas</span><span class="tag">Concurrency</span></div>
+          <div class="links reveal"><a href="https://kundar-travel.netlify.app" target="_blank" rel="noopener">Visit the site <span>→</span></a><a href="https://kundar-travel-host.netlify.app" target="_blank" rel="noopener">Host dashboard <span>→</span></a><a href="https://github.com/kd7-gif/kundar-travel" target="_blank" rel="noopener">View code <span>→</span></a></div>
+          <p class="note reveal">Payments are switched off in this demo. Log in to the host dashboard with <code>adaeze@host.kundar.test</code> / <code>kundar-host-demo</code>.</p>
+        </div>
+      </article>
+
+      <!-- 02 Drought -->
+      <article class="project flip" id="p-drought">
         <div class="gallery reveal">
           <figure class="stage"><img class="stage-img" src="img/drought-dashboard.webp" alt="Drought forecast dashboard" width="1600" height="872"><figcaption class="stage-cap">Dashboard with state drought map and risk ranking</figcaption></figure>
           <div class="thumbs" role="tablist" aria-label="Drought platform screenshots">
@@ -136,8 +175,8 @@
         </div>
       </article>
 
-      <!-- 02 ChopDash -->
-      <article class="project flip" id="p-chopdash">
+      <!-- 03 ChopDash -->
+      <article class="project" id="p-chopdash">
         <div class="gallery reveal">
           <figure class="stage"><img class="stage-img" src="img/chopdash-home.webp" alt="ChopDash home page" width="1600" height="1025" loading="lazy"><figcaption class="stage-cap">Home page</figcaption></figure>
           <div class="thumbs" role="tablist" aria-label="ChopDash screenshots">
@@ -170,8 +209,8 @@
         </div>
       </article>
 
-      <!-- 03 Turnup -->
-      <article class="project" id="p-turnup">
+      <!-- 04 Turnup -->
+      <article class="project flip" id="p-turnup">
         <div class="gallery reveal">
           <figure class="stage"><img class="stage-img" src="img/turnup-home.webp" alt="Turnup home page" width="1600" height="1025" loading="lazy"><figcaption class="stage-cap">Discover events and see which friends are going</figcaption></figure>
           <div class="thumbs" role="tablist" aria-label="Turnup screenshots">
@@ -204,8 +243,8 @@
         </div>
       </article>
 
-      <!-- 04 Store -->
-      <article class="project flip" id="p-store">
+      <!-- 05 Store -->
+      <article class="project" id="p-store">
         <div class="gallery reveal">
           <figure class="stage"><img class="stage-img" src="img/store-home.webp" alt="Store home page" width="1600" height="1000" loading="lazy"><figcaption class="stage-cap">Home page</figcaption></figure>
           <div class="thumbs" role="tablist" aria-label="Store screenshots">
