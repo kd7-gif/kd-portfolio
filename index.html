@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ayomikunle Daramola · Software Engineer</title>
+  <meta name="description" content="Ayomikunle (KD) Daramola: software engineer building full-stack web products and machine learning systems.">
+  <meta name="theme-color" content="#050607">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Intro curtain -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-cols"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="loader-mark"><span>K</span><span>D</span></div>
+  </div>
+
+  <!-- Header -->
+  <header class="nav">
+    <div class="nav-side nav-l">
+      <a href="#about">About</a><i></i><a href="#work">Work</a>
+    </div>
+    <a href="#top" class="mono" aria-label="KD, back to top">
+      <span aria-hidden="true">KD<em>.</em></span>
+    </a>
+    <div class="nav-side nav-r">
+      <a href="#next">Next</a><i></i><a href="#contact">Contact</a>
+    </div>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <a href="#work"><small>01</small>Work</a>
+    <a href="#next"><small>02</small>Building next</a>
+    <a href="#about"><small>03</small>About</a>
+    <a href="#contact"><small>04</small>Contact</a>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="top" data-name="Home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="ring-wrap" aria-hidden="true">
+        <div class="ring-fallback"></div>
+        <canvas id="ring"></canvas>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Software engineer · Web &amp; machine learning</p>
+        <h1 class="hero-title" data-split>Ayomikunle Daramola</h1>
+        <p class="lede reveal">I build <strong>full-stack web products</strong> and <strong>machine learning systems</strong> that work on real Nigerian problems, from forecasting drought state by state to taking payments for a live online store.</p>
+        <div class="cta reveal">
+          <a class="btn primary" href="#work">See my work</a>
+          <a class="btn" href="https://github.com/kd7-gif" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/ayomikunle-daramola-95b738260" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-meta reveal">
+        <span>Based in Nigeria · <span id="clock">--:--</span> WAT</span>
+        <span>Open to roles &amp; freelance</span>
+      </div>
+    </section>
+
+    <!-- Stack strip -->
+    <div class="marquee" aria-label="Tech I work with">
+      <div class="marquee-track">
+        <span>React</span><span>PyTorch</span><span>Node.js</span><span>FastAPI</span><span>PostgreSQL</span><span>Socket.IO</span><span>Paystack</span><span>MySQL</span><span>scikit-learn</span>
+        <span aria-hidden="true">React</span><span aria-hidden="true">PyTorch</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">FastAPI</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Socket.IO</span><span aria-hidden="true">Paystack</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">scikit-learn</span>
+      </div>
+    </div>
+
+    <!-- Work -->
+    <section id="work" class="section" data-name="Work">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 data-split>Selected work</h2>
+        <p class="sec-sub reveal">Four things I've built and shipped, from a thesis model to a store taking real payments.</p>
+      </div>
+
+      <div class="index-grid">
+        <a class="pcard" href="#p-drought" style="--d:0">
+          <span class="pcard-img"><img src="img/drought-dashboard.webp" alt="" loading="lazy"></span>
+          <span class="pcard-row"><span class="pcard-name">Drought Forecast</span><span class="pcard-year">2026</span></span>
+          <span class="pcard-tag">Deep learning thesis · PyTorch, React</span>
+        </a>
+        <a class="pcard" href="#p-chopdash" style="--d:1">
+          <span class="pcard-img"><img src="img/chopdash-home.webp" alt="" loading="lazy"></span>
+          <span class="pcard-row"><span class="pcard-name">ChopDash</span><span class="pcard-year">Live demo</span></span>
+          <span class="pcard-tag">Food delivery · three apps in one</span>
+        </a>
+        <a class="pcard" href="#p-turnup" style="--d:2">
+          <span class="pcard-img"><img src="img/turnup-home.webp" alt="" loading="lazy"></span>
+          <span class="pcard-row"><span class="pcard-name">Turnup</span><span class="pcard-year">Live demo</span></span>
+          <span class="pcard-tag">Events &amp; QR ticketing</span>
+        </a>
+        <a class="pcard" href="#p-store" style="--d:3">
+          <span class="pcard-img"><img src="img/store-home.webp" alt="" loading="lazy"></span>
+          <span class="pcard-row"><span class="pcard-name">Arede Store</span><span class="pcard-year">Production</span></span>
+          <span class="pcard-tag">E-commerce for a homeware retailer</span>
+        </a>
+      </div>
+
+      <!-- 01 Drought -->
+      <article class="project" id="p-drought">
+        <div class="gallery reveal">
+          <figure class="stage"><img class="stage-img" src="img/drought-dashboard.webp" alt="Drought forecast dashboard" width="1600" height="872"><figcaption class="stage-cap">Dashboard with state drought map and risk ranking</figcaption></figure>
+          <div class="thumbs" role="tablist" aria-label="Drought platform screenshots">
+            <button class="thumb on" type="button" data-src="img/drought-dashboard.webp" data-cap="Dashboard with state drought map and risk ranking"><img src="img/drought-dashboard.webp" alt="" loading="lazy"><span>Dashboard</span></button>
+            <button class="thumb" type="button" data-src="img/drought-state.webp" data-cap="State detail: 3-month SPEI forecast for Lagos"><img src="img/drought-state.webp" alt="" loading="lazy"><span>State forecast</span></button>
+            <button class="thumb" type="button" data-src="img/drought-evaluation.webp" data-cap="Model evaluation against a persistence baseline"><img src="img/drought-evaluation.webp" alt="" loading="lazy"><span>Evaluation</span></button>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status live reveal">Completed · June 2026</span>
+          <h3 class="reveal">Nigerian State-Level Drought Forecasting System</h3>
+          <p class="desc reveal">My final-year thesis at Bowen University. A deep learning platform that forecasts drought for all 37 Nigerian states up to six months ahead, using the SPEI drought index built from CHIRPS rainfall and CRU climate data, and presented on an interactive React dashboard.</p>
+          <ul class="did reveal">
+            <li>Trained GRU and Transformer encoder models in PyTorch at 3- and 6-month horizons</li>
+            <li>FastAPI service runs the models; an Express API feeds the dashboard</li>
+            <li>Best model (GRU, 3-month) cut forecast error 19.5% below a persistence baseline on held-out test data</li>
+            <li>New monthly climate data can be ingested through the API without code changes</li>
+          </ul>
+          <div class="facts reveal">
+            <div class="fact"><b data-count>4</b><span>trained models</span></div>
+            <div class="fact"><b data-count>37</b><span>states forecast</span></div>
+            <div class="fact"><b data-count>6 mo</b><span>forecast horizon</span></div>
+          </div>
+          <div class="tags reveal"><span class="tag">PyTorch</span><span class="tag">FastAPI</span><span class="tag">Pandas</span><span class="tag">React</span><span class="tag">Express</span><span class="tag">CHIRPS</span><span class="tag">CRU</span></div>
+          <div class="links reveal"><a href="https://github.com/kd7-gif/Nigerian-drought-prediction" target="_blank" rel="noopener">View code <span>→</span></a></div>
+        </div>
+      </article>
+
+      <!-- 02 ChopDash -->
+      <article class="project flip" id="p-chopdash">
+        <div class="gallery reveal">
+          <figure class="stage"><img class="stage-img" src="img/chopdash-home.webp" alt="ChopDash home page" width="1600" height="1025" loading="lazy"><figcaption class="stage-cap">Home page</figcaption></figure>
+          <div class="thumbs" role="tablist" aria-label="ChopDash screenshots">
+            <button class="thumb on" type="button" data-src="img/chopdash-home.webp" data-cap="Home page"><img src="img/chopdash-home.webp" alt="" loading="lazy"><span>Home</span></button>
+            <button class="thumb" type="button" data-src="img/chopdash-foryou.webp" data-cap="Order again and Recommended for you, learned from order history"><img src="img/chopdash-foryou.webp" alt="" loading="lazy"><span>For you</span></button>
+            <button class="thumb" type="button" data-src="img/chopdash-restaurant.webp" data-cap="Restaurant page suggesting dishes that go with the cart"><img src="img/chopdash-restaurant.webp" alt="" loading="lazy"><span>Menu</span></button>
+            <button class="thumb" type="button" data-src="img/chopdash-tracking.webp" data-cap="Live order tracking as the kitchen and rider update it"><img src="img/chopdash-tracking.webp" alt="" loading="lazy"><span>Tracking</span></button>
+            <button class="thumb" type="button" data-src="img/chopdash-kitchen.webp" data-cap="Kitchen dashboard where staff accept, prepare and hand over orders"><img src="img/chopdash-kitchen.webp" alt="" loading="lazy"><span>Kitchen</span></button>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status live reveal">Completed · Live demo</span>
+          <h3 class="reveal">ChopDash Food Delivery Platform</h3>
+          <p class="desc reveal">Three apps in one product: customers order from 28 restaurants and stores, kitchens run orders from a live dashboard, and riders claim and complete deliveries on their phones. Every status change reaches the right screens instantly.</p>
+          <ul class="did reveal">
+            <li>Live tracking over WebSockets, with each browser joining only the rooms it is allowed to see</li>
+            <li>Dish and restaurant recommendations learned from order history with item-to-item cosine similarity</li>
+            <li>Paystack payments with prices always worked out on the server</li>
+            <li>Race-safe updates, so only one rider can claim a delivery even with simultaneous taps</li>
+            <li>Hosted demo runs entirely in the browser, with one-tap switching between customer, kitchen and rider</li>
+          </ul>
+          <div class="facts reveal">
+            <div class="fact"><b data-count>69%</b><span>top-1 hit rate (vs 54% baseline)</span></div>
+            <div class="fact"><b data-count>3</b><span>apps in one</span></div>
+            <div class="fact"><b data-count>48</b><span>API tests</span></div>
+          </div>
+          <div class="tags reveal"><span class="tag">React</span><span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">Socket.IO</span><span class="tag">Paystack</span><span class="tag">Recommendations</span></div>
+          <div class="links reveal"><a href="https://chopdash-demo.netlify.app" target="_blank" rel="noopener">Try the live demo <span>→</span></a><a href="https://github.com/kd7-gif/chopdash" target="_blank" rel="noopener">View code <span>→</span></a></div>
+          <p class="note reveal">No sign-up needed. Use the bar at the top of the demo to switch between Customer, Kitchen and Rider.</p>
+        </div>
+      </article>
+
+      <!-- 03 Turnup -->
+      <article class="project" id="p-turnup">
+        <div class="gallery reveal">
+          <figure class="stage"><img class="stage-img" src="img/turnup-home.webp" alt="Turnup home page" width="1600" height="1025" loading="lazy"><figcaption class="stage-cap">Discover events and see which friends are going</figcaption></figure>
+          <div class="thumbs" role="tablist" aria-label="Turnup screenshots">
+            <button class="thumb on" type="button" data-src="img/turnup-home.webp" data-cap="Discover events and see which friends are going"><img src="img/turnup-home.webp" alt="" loading="lazy"><span>Home</span></button>
+            <button class="thumb" type="button" data-src="img/turnup-event.webp" data-cap="Ticket types, promo codes and server-priced totals"><img src="img/turnup-event.webp" alt="" loading="lazy"><span>Tickets</span></button>
+            <button class="thumb" type="button" data-src="img/turnup-tickets.webp" data-cap="One QR pass per ticket, scanned once at the door"><img src="img/turnup-tickets.webp" alt="" loading="lazy"><span>QR</span></button>
+            <button class="thumb" type="button" data-src="img/turnup-live.webp" data-cap="Live check-in dashboard updating as guests arrive"><img src="img/turnup-live.webp" alt="" loading="lazy"><span>Live</span></button>
+            <button class="thumb" type="button" data-src="img/turnup-host.webp" data-cap="Host dashboard with revenue, events and a live sales feed"><img src="img/turnup-host.webp" alt="" loading="lazy"><span>Host</span></button>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status live reveal">Completed · Live demo</span>
+          <h3 class="reveal">Turnup Events &amp; Ticketing Platform</h3>
+          <p class="desc reveal">Guests discover events, see which friends are going and buy tickets in seconds. Hosts create events, sell tickets, check guests in with QR codes at the door and watch arrivals on a live dashboard.</p>
+          <ul class="did reveal">
+            <li>Tickets held for 10 minutes at checkout with one atomic database update, so a sold-out show can never oversell</li>
+            <li>QR check-in from any phone camera; each ticket admits once, even if two doors scan the same screenshot</li>
+            <li>Live check-in dashboard over WebSockets with arrivals every 15 minutes and a feed of every scan</li>
+            <li>Host tools for events, ticket types, promo codes, door staff and co-hosts, with sales charts</li>
+            <li>Hosted demo runs entirely in the browser, with one-tap switching between guest, host and door</li>
+          </ul>
+          <div class="facts reveal">
+            <div class="fact"><b data-count>0</b><span>oversold in a 500-buyer rush (naive: 552)</span></div>
+            <div class="fact"><b data-count>3</b><span>roles: guest, host, door</span></div>
+            <div class="fact"><b data-count>51</b><span>API tests</span></div>
+          </div>
+          <div class="tags reveal"><span class="tag">React</span><span class="tag">Express</span><span class="tag">MySQL</span><span class="tag">Socket.IO</span><span class="tag">QR codes</span><span class="tag">Concurrency</span></div>
+          <div class="links reveal"><a href="https://turnup-demo.netlify.app" target="_blank" rel="noopener">Try the live demo <span>→</span></a><a href="https://github.com/kd7-gif/turnup" target="_blank" rel="noopener">View code <span>→</span></a></div>
+          <p class="note reveal">No sign-up needed. Use the bar at the top of the demo to switch between Guest, Host and Door.</p>
+        </div>
+      </article>
+
+      <!-- 04 Store -->
+      <article class="project flip" id="p-store">
+        <div class="gallery reveal">
+          <figure class="stage"><img class="stage-img" src="img/store-home.webp" alt="Store home page" width="1600" height="1000" loading="lazy"><figcaption class="stage-cap">Home page</figcaption></figure>
+          <div class="thumbs" role="tablist" aria-label="Store screenshots">
+            <button class="thumb on" type="button" data-src="img/store-home.webp" data-cap="Home page"><img src="img/store-home.webp" alt="" loading="lazy"><span>Home</span></button>
+            <button class="thumb" type="button" data-src="img/store-product.webp" data-cap="Product page with stock status"><img src="img/store-product.webp" alt="" loading="lazy"><span>Product</span></button>
+            <button class="thumb" type="button" data-src="img/store-checkout.webp" data-cap="Checkout with delivery pricing by area"><img src="img/store-checkout.webp" alt="" loading="lazy"><span>Checkout</span></button>
+            <button class="thumb" type="button" data-src="img/store-admin-products.webp" data-cap="Admin panel for managing products"><img src="img/store-admin-products.webp" alt="" loading="lazy"><span>Admin</span></button>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status live reveal">Shipped · Production</span>
+          <h3 class="reveal">Full-Stack E-Commerce Store</h3>
+          <p class="desc reveal">An online store for a homeware retailer, taken from an empty repo to a live custom domain. Customers browse and fill a bag freely, create an account to order, and pay online for delivery or store pickup. Staff run products and orders from their own admin panel.</p>
+          <ul class="did reveal">
+            <li>Paystack payments with server-side verification and webhooks</li>
+            <li>Delivery priced by area, set on the server</li>
+            <li>Admin panel for products, photos, stock and order status</li>
+            <li>Bulk product import from a spreadsheet with a dry-run check</li>
+            <li>Email alert to the shop when an order is paid</li>
+          </ul>
+          <div class="tags reveal"><span class="tag">React (Vite)</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MySQL</span><span class="tag">Paystack</span></div>
+          <div class="links reveal"><a href="https://arede-store-demo.netlify.app" target="_blank" rel="noopener">Try the live demo <span>→</span></a><a href="https://github.com/kd7-gif/arede" target="_blank" rel="noopener">View code <span>→</span></a></div>
+          <p class="note reveal">The demo runs with sample data and simulated payments. Log in as admin with <code>admin@arede.demo</code> / <code>demo1234</code>.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Next -->
+    <section id="next" class="section" data-name="Next">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 data-split>Building next</h2>
+      </div>
+      <article class="flag reveal">
+        <span class="status build">Flagship · Planned</span>
+        <h3>Real-Time Payment Fraud Detection</h3>
+        <p>A live system that scores every transaction for fraud risk in milliseconds, explains why each one was flagged, and shows analysts a monitoring dashboard.</p>
+        <p class="why"><b>Why it matters:</b> it combines ML, streaming backends and product design, the exact mix fintech teams hire for.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">FastAPI</span><span class="tag">React</span></div>
+      </article>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" data-name="About">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2 data-split>About</h2>
+      </div>
+      <div class="about">
+        <ol class="timeline">
+          <li class="reveal"><span class="when">2026</span><div><b>B.Sc. Software Engineering</b><span>Bowen University, Iwo · Open Source Club</span></div></li>
+          <li class="reveal"><span class="when">Mar–Aug 2025</span><div><b>Software Development Intern</b><span>Aptech, Ibadan</span></div></li>
+          <li class="reveal"><span class="when">Oct 2026</span><div><b>The Web Developer Bootcamp</b><span>Udemy · 74 hours</span></div></li>
+          <li class="reveal"><span class="when">Jul 2025</span><div><b>Programming with Python</b><span>Aptech Ltd.</span></div></li>
+        </ol>
+        <div class="skills">
+          <div class="skill reveal"><h4>Frontend</h4><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span></div></div>
+          <div class="skill reveal"><h4>Backend</h4><div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Socket.IO</span></div></div>
+          <div class="skill reveal"><h4>Machine learning</h4><div class="tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Pandas</span><span class="tag">scikit-learn</span></div></div>
+          <div class="skill reveal"><h4>Tools</h4><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Netlify</span><span class="tag">Paystack</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" data-name="Contact">
+      <p class="eyebrow reveal">Open to roles and freelance work</p>
+      <h2 class="contact-title" data-split>Let's build something.</h2>
+      <div class="rows">
+        <div class="crow reveal"><span class="k">Email</span><span class="v" id="email">kunle.15daramola@gmail.com</span><button class="copy" type="button" data-target="email">Copy</button></div>
+        <div class="crow reveal"><span class="k">LinkedIn</span><span class="v"><a href="https://linkedin.com/in/ayomikunle-daramola-95b738260" target="_blank" rel="noopener">ayomikunle-daramola</a></span><span class="arrow">↗</span></div>
+        <div class="crow reveal"><span class="k">GitHub</span><span class="v"><a href="https://github.com/kd7-gif" target="_blank" rel="noopener">kd7-gif</a></span><span class="arrow">↗</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot"><span>© 2026 Ayomikunle Daramola</span><span>Designed and built by me, in plain HTML, CSS and JavaScript</span></footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/ring.js" defer></script>
+</body>
+</html>
